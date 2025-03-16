@@ -37,7 +37,7 @@ const NavBar = () => {
             data-drawer-toggle="default-sidebar"
             aria-controls="default-sidebar"
             type="button"
-            className="inline-flex items-center text-sm text-gray-500 rounded-lg sm:hidden hover:text-gray-100 focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center text-sm text-gray-500 rounded-lg sm:hidden hover:text-gray-100 focus:outline-none"
           >
             <span className="sr-only">Open sidebar</span>
             <div className="relative w-6 h-6">
