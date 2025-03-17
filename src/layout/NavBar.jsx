@@ -178,19 +178,13 @@ const NavBar = () => {
           {/* Resume */}
           <Resume />
           {/* research & learning */}
-          <Services/>
+          <Services />
           {/* Portfolio */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
-            <div className="flex items-center justify-center rounded-sm bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">text</p>
-            </div>
-            <div className="flex items-center justify-center rounded-sm bg-gray-50 h-28 dark:bg-gray-800">
-              <p className="text-2xl text-gray-400 dark:text-gray-500">text</p>
-            </div>
-          </div>
-          <div className="flex items-center justify-center h-48 mb-4 rounded-sm bg-gray-50 dark:bg-gray-800">
+          <Portfolio />
+          {/* Contact */}
+          {/* <div className="flex items-center justify-center h-48 mb-4 rounded-sm bg-gray-50 dark:bg-gray-800">
             <p className="text-2xl text-gray-400 dark:text-gray-500">text</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
@@ -198,46 +192,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// function AboutMe() {
-//   return (
-//     <section className="bg-black text-white py-16 px-8">
-//       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center">
-//         <div className="md:w-2/3 text-center md:text-left">
-//           <h2 className="text-5xl font-bold text-gray-800 relative inline-block">
-//             <span className="absolute -z-10 text-7xl font-extrabold text-gray-900 opacity-20">
-//               ABOUT ME
-//             </span>
-//             <span className="relative text-white border-b-4 border-blue-500">Know Me More</span>
-//           </h2>
-//           <p className="mt-6 text-lg font-light">
-//             I'm <span className="font-bold text-blue-500">Simone Olivia</span>, a Web Developer
-//           </p>
-//           <p className="mt-4 text-gray-400">
-//             I help you build brand for your business at an affordable price. Thousands of clients have
-//             procured exceptional results while working with our dedicated team. When an unknown printer took a
-//             galley of type and scrambled it to make a type specimen book.
-//           </p>
-//           <p className="mt-4 text-gray-400">
-//             Delivering work within time and budget which meets client’s requirements is our motto. Lorem Ipsum
-//             has been the industry’s standard dummy text ever when an unknown printer took a galley.
-//           </p>
-//         </div>
-//         <div className="md:w-1/3 mt-8 md:mt-0 md:pl-12">
-//           <div className="text-gray-400 space-y-2">
-//             <p><span className="text-white font-bold">Name:</span> Simone Olivia</p>
-//             <p><span className="text-white font-bold">Email:</span> <a href="mailto:chat@simone.com" className="text-blue-500">chat@simone.com</a></p>
-//             <p><span className="text-white font-bold">Age:</span> 28</p>
-//             <p><span className="text-white font-bold">From:</span> Los Angeles, California</p>
-//           </div>
-//           <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg text-lg">
-//             Download CV
-//           </button>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 function AboutMe() {
   return (
@@ -260,11 +214,13 @@ function AboutMe() {
             Developer
           </p>
           <p className="mt-4 text-gray-400">
-            I am happy to work as a  <span className="font-bold">Full-Stack Developer</span> with experience
-            in JavaScript, Vue.js, and Laravel with MySQL. I aim to apply and
-            enhance my skills in both front-end and back-end development while
-            learning and receiving guidance from my team. I enjoy researching
-            and learning new technologies that are popular today.
+            I am happy to work as a{" "}
+            <span className="font-bold">Full-Stack Developer</span> with
+            experience in JavaScript, Vue.js, and Laravel with MySQL. I aim to
+            apply and enhance my skills in both front-end and back-end
+            development while learning and receiving guidance from my team. I
+            enjoy researching and learning new technologies that are popular
+            today.
           </p>
           <p className="mt-4 text-gray-400">
             Delivering work within time and budget which meets client’s
@@ -300,48 +256,140 @@ function AboutMe() {
   );
 }
 
-
-
 function Resume() {
+  const educations = [
+    {
+      year: "2023-2024",
+      title: "Computer Science",
+      location: "Passerelles Numériques Cambodia",
+      description:
+        " 2-year full time training in IT with a major in Software Development, meeting the needs of local companies in the IT industry, for underprivileged Cambodian youths.",
+    },
+    {
+      year: "2020-2022",
+      title: "High School Diploma",
+      location: "Chom Roeun Vichea High School",
+      description:
+        "Three years of private school education supported by the Catholic community and the Korean Association.\n- General knowledge\n- Computer proficiency, including Microsoft Office",
+    },
+  ];
+
+  const experiences = [
+    {
+      year: "01/08/2024-30/11/2024",
+      position: "Software Engineer Internship",
+      company: "NiyAI Co., Ltd",
+      description:
+        "Internship as a Software Engineer, working on the company's project and research about how AI work. They are using technologies\n- PHP, Laravel, MySQL\n- Agile methodology (Scrum)\n- Testing, JMetter\n- Git version control ",
+    },
+  ];
+
   return (
     <section className="bg-black text-white py-16 ">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-gray-800 relative inline-block text-center w-full">
-          <span 
-            className="absolute -z-10 text-7xl font-extrabold text-gray-900 opacity-20"
-            style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)" }}
-          >
-            SUMMARY
+          <span className="relative text-white border-b-4 border-blue-500">
+            Resume
           </span>
-          <span className="relative text-white border-b-4 border-blue-500">Resume</span>
         </h2>
-        
+
         <div className="mt-12 grid md:grid-cols-2 gap-8">
           {/* Education Section */}
           <div>
             <h3 className="text-2xl font-bold">My Education</h3>
-            <div className="bg-gray-900 p-6 rounded-lg mt-4">
-              <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">2000 - 2004</span>
-              <h4 className="text-xl font-bold mt-2">Computer Science</h4>
-              <p className="text-blue-500">International University</p>
-              <p className="text-gray-400 mt-2">
-                Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
-              </p>
-            </div>
+            {educations.map((education, index) => (
+              <div key={index} className="bg-gray-900 p-6 rounded-lg mt-4">
+                <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">
+                  {education.year}
+                </span>
+                <h4 className="text-xl font-bold mt-2">{education.title}</h4>
+                <p className="text-blue-500">{education.location}</p>
+                <p className="text-gray-400 mt-2">
+                  {education.description.split("\n").map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
+              </div>
+            ))}
           </div>
-          
+
           {/* Experience Section */}
           <div>
             <h3 className="text-2xl font-bold">My Experience</h3>
-            <div className="bg-gray-900 p-6 rounded-lg mt-4">
-              <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">2012 - 2013</span>
-              <h4 className="text-xl font-bold mt-2">Jr. UI UX Designer</h4>
-              <p className="text-blue-500">Themeforest</p>
-              <p className="text-gray-400 mt-2">
-                Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
-              </p>
-            </div>
+            {experiences.map((experience, index) => (
+              <div key={index} className="bg-gray-900 p-6 rounded-lg mt-4">
+                <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">
+                  {experience.year}
+                </span>
+                <h4 className="text-xl font-bold mt-2">
+                  {experience.position}
+                </h4>
+                <p className="text-blue-500">{experience.company}</p>
+                <p className="text-gray-400 mt-2">
+                  {experience.description.split("\n").map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
+              </div>
+            ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+import { FaDesktop, FaPencilRuler, FaBrush, FaDatabase } from "react-icons/fa";
+
+const services = [
+  {
+    title: "Web Design",
+    icon: <FaDesktop />,
+    description:
+      "Create a stunning and user-friendly website that looks great on any device and works seamlessly with a dynamic database.",
+  },
+  {
+    title: "UI/UX Design",
+    icon: <FaPencilRuler />,
+    description:
+      "Design intuitive and visually appealing interfaces that make every interaction smooth and enjoyable for users.",
+  },
+  {
+    title: "Database Design",
+    icon: <FaDatabase />,
+    description:
+      "Structure and optimize databases efficiently to ensure fast, secure, and scalable data management for your projects.",
+  },
+];
+
+function Services() {
+  return (
+    <section className="bg-[#1E2125] text-white py-16">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-8 text-white">What I Do?</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="flex items-center p-6 rounded-lg shadow-md text-start"
+            >
+              <div className="text-blue-500 text-3xl p-4 bg-black rounded-lg">
+                {service.icon}
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-semibold">{service.title}</h3>
+                <p className="text-gray-400 text-sm mt-2">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -350,34 +398,77 @@ function Resume() {
 
 
 
-import { FaPalette, FaDesktop, FaPencilRuler, FaBrush, FaChartLine, FaBullhorn } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
-const services = [
-  { title: "Graphic Design", icon: <FaPalette />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." },
-  { title: "Web Design", icon: <FaDesktop />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." },
-  { title: "UI/UX Design", icon: <FaPencilRuler />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." },
-  { title: "App Design & Develop", icon: <FaBrush />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." },
-  { title: "Business Analysis", icon: <FaChartLine />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." },
-  { title: "SEO Marketing", icon: <FaBullhorn />, description: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure." }
-];
+function Portfolio() {
+  const categories = ["All", "Brand", "Photos", "Design"];
+  const portfolioItems = [
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-2.jpg", category: "Design" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-5.jpg", category: "Brand" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-1.jpg", category: "Photos" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-1.jpg", category: "Photos" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-7.jpg", category: "Design" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-6.jpg", category: "Brand" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-4.jpg", category: "Photos" },
+    { src: "https://harnishdesign.net/demo/react/simone/demo/images/projects/project-4.jpg", category: "Photos" },
+  ];
 
-function Services() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredItems =
+    activeCategory === "All"
+      ? portfolioItems
+      : portfolioItems.filter((item) => item.category === activeCategory);
+
   return (
-    <section className="bg-gray-900 text-white py-16">
+    <div className="bg-gray-900 text-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-white">What I Do?</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="flex items-start p-6 bg-gray-800 rounded-lg shadow-md">
-              <div className="text-blue-500 text-3xl p-4 bg-black rounded-lg">{service.icon}</div>
-              <div className="ml-4">
-                <h3 className="text-lg font-semibold">{service.title}</h3>
-                <p className="text-gray-400 text-sm mt-2">{service.description}</p>
-              </div>
-            </div>
+        <h2 className="text-4xl font-bold mb-4 relative inline-block">
+          My Work
+          <span className="absolute -z-10 text-7xl font-extrabold opacity-10 left-1/2 -translate-x-1/2">
+            PORTFOLIO
+          </span>
+        </h2>
+
+        {/* Category Filter */}
+        <div className="flex justify-center space-x-6 mt-6">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setActiveCategory(category)}
+              className={`text-sm font-medium ${
+                activeCategory === category
+                  ? "text-blue-500 border-b-2 border-blue-500"
+                  : "text-gray-400"
+              } hover:text-blue-400 transition`}
+            >
+              {category}
+            </button>
           ))}
         </div>
+
+        {/* Masonry Grid Layout with Animation */}
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mt-10">
+          <AnimatePresence>
+            {filteredItems.map((item, index) => (
+              <motion.div
+                key={index}
+                className="break-inside-avoid rounded-lg overflow-hidden shadow-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
+                <img
+                  src={item.src}
+                  alt={`Portfolio item ${index + 1}`}
+                  className="w-full h-auto rounded-lg"
+                />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
