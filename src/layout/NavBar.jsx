@@ -9,6 +9,7 @@ import Skill from "../components/Skill";
 import Portfolio from "../components/Portfolio";
 import mePro from "../assets/saroeun-khav.jpg";
 import Contact from "../components/Contact";
+import TechLogos from "../components/TechLogos";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -156,6 +157,7 @@ const NavBar = () => {
           <AboutMe />
           <Resume />
           <Skill />
+          <TechLogos/>
           <Portfolio />
           {/* Contact */}
           <Contact />
