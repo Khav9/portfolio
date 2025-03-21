@@ -8,6 +8,7 @@ import Resume from "../components/Resume";
 import Skill from "../components/Skill";
 import Portfolio from "../components/Portfolio";
 import mePro from "../assets/saroeun-khav.jpg";
+import Contact from "../components/Contact";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -152,11 +153,12 @@ const NavBar = () => {
       <div className="sm:ml-64">
         <div className="border-gray-200  rounded-lg bg-[#1E2125]">
           <HeroSession />
-          <AboutMe/>
+          <AboutMe />
           <Resume />
           <Skill />
           <Portfolio />
           {/* Contact */}
+          <Contact />
           {/* <div className="flex items-center justify-center h-48 mb-4 rounded-sm bg-gray-50 dark:bg-gray-800">
             <p className="text-2xl text-gray-400 dark:text-gray-500">text</p>
           </div> */}
