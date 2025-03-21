@@ -4,7 +4,7 @@ import CSS from "../assets/techs/css.svg";
 import PYTHON from "../assets/techs/python.svg";
 import JS from "../assets/techs/JavaScript.png";
 import PHP from "../assets/techs/PHP.svg.png";
-import LARAVEL from "../assets/techs/Laravel.png";
+import LARAVEL from "../assets/techs/laravel.png";
 import VUE from "../assets/techs/Vue.svg.png";
 import REACT from "../assets/techs/React.webp";
 import FLUTTER from "../assets/techs/Flutter.png";
