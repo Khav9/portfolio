@@ -26,7 +26,7 @@ const Skill = () => {
   return (
     <section className="bg-[#1E2125] text-white py-16">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-white">What I Do?</h2>
+        <h2 className="sm:text-5xl text-3xl font-bold mb-8 text-white">What I Do?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div

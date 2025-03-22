@@ -31,7 +31,7 @@ const Resume = () => {
   return (
     <section className="bg-black text-white py-16 ">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-gray-800 relative inline-block text-center w-full">
+        <h2 className="sm:text-5xl text-3xl font-bold text-gray-800 relative inline-block text-center w-full">
           <span className="relative text-white border-b-4 border-blue-500">
             Resume
           </span>
@@ -40,7 +40,7 @@ const Resume = () => {
         <div className="mt-12 grid md:grid-cols-2 gap-8">
           {/* Education Section */}
           <div>
-            <h3 className="text-2xl font-bold">My Education</h3>
+            <h3 className="text-2xl font-bold sm:px-0 px-3">My Education</h3>
             {educations.map((education, index) => (
               <div key={index} className="bg-gray-900 p-6 rounded-lg mt-4">
                 <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">
@@ -62,7 +62,7 @@ const Resume = () => {
 
           {/* Experience Section */}
           <div>
-            <h3 className="text-2xl font-bold">My Experience</h3>
+            <h3 className="text-2xl font-bold sm:px-0 px-3">My Experience</h3>
             {experiences.map((experience, index) => (
               <div key={index} className="bg-gray-900 p-6 rounded-lg mt-4">
                 <span className="bg-blue-600 text-white text-sm px-3 py-1 rounded">

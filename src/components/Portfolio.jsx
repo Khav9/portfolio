@@ -49,7 +49,7 @@ const Portfolio = () => {
   return (
     <div className="bg-gray-900 text-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="sm:text-5xl text-3xl font-bold mb-4 relative inline-block">
           My Work
         </h2>
 

@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="bg-[#1E2125] text-white pt-36 pb-22 px-8 text-center">
+    <section className="bg-[#1E2125] text-white py-30 px-8 text-center">
       <div className="text-center  mx-auto">
-        <h2 className="text-5xl font-bold text-gray-800 relative inline-block">
+        <h2 className="sm:text-5xl text-3xl font-bold text-gray-800 relative inline-block">
           <span
             className="absolute -z-10 text-7xl font-extrabold text-gray-900 opacity-20"
             style={{ textShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)" }}
