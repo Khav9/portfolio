@@ -17,7 +17,10 @@ const Contact = () => {
         </h2>
         <p className="mt-12 text-gray-400">010 250 337</p>
         <p className="mt-3 text-gray-400">
-          <a href="@khav_saroeun">@khav_saroeun</a>
+          <a href="https://t.me/khav_saroeun"
+          target="https://t.me/khav_saroeun"
+          rel="noopener noreferrer"
+          >@khav_saroeun</a>
         </p>
         <p className="mt-3 text-gray-400">
           <a href="mailto:khav.saroeun@gmail.com">khav.saroeun@gmail.com</a>
